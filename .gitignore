@@ -1,0 +1,6 @@
+vendor
+data/cache/*
+data/*.txt
+!data/cache/.gitkeep
+.php_cs.cache
+.idea

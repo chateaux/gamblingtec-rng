@@ -1,0 +1,25 @@
+{
+    "name": "gamblingtec/lottorisq-agent",
+    "description": "Fulfill Gamblingtec lottery tickets with Lottorisq.",
+    "license": "proprietary",
+    "require": {
+        "zendframework/zend-servicemanager": "^3.0",
+        "zendframework/zend-console": "^2.5",
+        "zfcampus/zf-console": "^1.3",
+        "zendframework/zend-diactoros": "^1.3",
+        "zendframework/zend-text": "^2.6",
+        "zendframework/zend-cache": "^2.7",
+        "zendframework/zend-math": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Application\\": "src"
+        }
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.14"
+    },
+    "scripts": {
+		"cs-check": "php-cs-fixer --version && php-cs-fixer fix -v --diff --dry-run"
+	}
+}
