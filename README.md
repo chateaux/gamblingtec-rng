@@ -7,6 +7,8 @@ applications to managed licensing services. Additionally, the company offers a s
 developers to integrate their games into the GamblingTec platform to be offered under license 
 to casino operators.
 
+visit: https://www.gamblingtec.com for more information.
+
  ### Incorporation's + License applications
  
  We work in Curacao and Malta and will manage the process of applying for a license under you
