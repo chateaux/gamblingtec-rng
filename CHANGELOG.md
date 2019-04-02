@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.1.1]
+### Fixed
+- General content spelling mistakes
+
+### Added
+- Fisher Yates card shuffle
+- More detailed content
+- Clubs, Diamonds, Hearts, Spades game
+- Scaled data method
+- General copyright data
+
 ## [0.1.0]
 ### Added
 - Initial release
