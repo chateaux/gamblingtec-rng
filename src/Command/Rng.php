@@ -56,6 +56,16 @@ class Rng
                 $this->fisherYatesShuffle($console);
             }
 
+            if ($answer == '3') {
+                $console->clearScreen();
+                $this->suitsYouSir($console);
+            }
+
+            if ($answer == '4') {
+                $console->clearScreen();
+                $this->scaleMinMax($console);
+            }
+
             if ($answer == 'q') {
                 $console->clearScreen();
                 $loop = false;
