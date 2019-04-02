@@ -5,6 +5,8 @@
  */
 namespace Application\Service;
 
+use Gamblingtec\RNG\Utility\GamblingTecRNG;
+
 class FisherYatesShuffle
 {
     public static function shuffle(array $array) : array

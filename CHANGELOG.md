@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 
 ## [1.0.0]
+### Fix
+- Fisher Yates shuffle
+
+## [1.0.0]
 ### Updated
 - Updated content
 
@@ -29,7 +33,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Initial release
 - This CHANGELOG file
 
-[Unreleased]: https://github.com/chateaux/gamblingtec-rng/compare/1.0.0...HEAD
+[Unreleased]: https://github.com/chateaux/gamblingtec-rng/compare/1.0.1...HEAD
+[1.0.1]: https://github.com/chateaux/gamblingtec-rng/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/chateaux/gamblingtec-rng/compare/0.1.1...1.0.0
 [0.1.1]: https://github.com/chateaux/gamblingtec-rng/compare/0.1.0...0.1.1
 [0.1.0]: https://github.com/chateaux/gamblingtec-rng/compare/039242477f4ba5f7ed6d6fc735e9349a913dbba7...0.1.0

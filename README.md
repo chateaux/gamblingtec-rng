@@ -71,8 +71,9 @@ We posted a link about the certification process here:
 https://discourse.zendframework.com/t/i-had-zendmathrand-certified-and-it-passed-rng-testing/951
 
 ### You can find the class:
-Packagist: https://packagist.org/packages/gamblingtec/certified-rng
-Github: https://github.com/sunsevennv/certified-rng
+
+* Packagist: https://packagist.org/packages/gamblingtec/certified-rng
+* Github: https://github.com/sunsevennv/certified-rng
 
 
 ## Installing this utility
