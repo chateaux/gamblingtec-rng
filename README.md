@@ -61,6 +61,7 @@ holder with the certificate we issue.
 Zend\Math\Rand uses a cryptographically secure random number generator and we would encourage you
 to read about the class here: https://docs.zendframework.com/zend-math/rand/
 
+
 We posted a link about the certification process here: 
 https://discourse.zendframework.com/t/i-had-zendmathrand-certified-and-it-passed-rng-testing/951
 
@@ -70,7 +71,7 @@ Download the zip to your computer or use git:
 
 * git add remote rng <url to repo>
 * git fetch --all
-* git merge rnd/develop
+* git merge rng/develop
 
 Once downloaded cd into the rng folder and then use composer to install the dependencies
 
@@ -104,4 +105,4 @@ an instant game or scratch type game environment, get in touch, we can help!
 * SA Mobile: +27 (0)60-457-8084
 * Sales office: +27 (0)21-839-5509
 * skype: brendanjnash
-* Discord: https://discord.gg/Kjy5qkq 
+* Discord: https://discord.gg/Kjy5qkq
