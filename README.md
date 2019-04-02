@@ -99,13 +99,17 @@ The Fisher-Yates shuffle is an algorithm for generating a random permutation of 
 it to shuffle a deck of cards!
 
 ## Need to certify your games for a gambling license?
-If you use this library it can be certified for remote gambling purposes, please make sure you do not modify the GamblingTecRNG.php file which uses
-static methods to call the Zend/Math/Rand.php static methods.
+If you use this library it can be certified for remote gambling purposes, in order to do so, please make sure you do not modify the GamblingTecRNG.php file.
+
+From time to time we modify this file which requires authorisation from the certificate authority.
+
+# Helping out
+If you like our utility and wish to contribute a service to it such as a sample game or an algorithm. Fork the repo and submit a pull request.
 
 # Using the code in your own game
 
-When using the code, simply call the methods from GamblingTecRNG.php in order
-to obtain your random numbers.
+When using the code, simply call the static methods from GamblingTecRNG.php in order
+to obtain your random numbers. Take a look at the sample games that use the class.
 
 If you need assistance writing classes to generate lottery numbers and winners in
 an instant game or scratch type game environment, get in touch, we can help!
