@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "09348494101ca136f752d4782af4ea0d",
+    "content-hash": "0f6724691491fb302f5eeae54df89888",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -36,6 +36,59 @@
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
             "time": "2017-02-14T19:40:03+00:00"
+        },
+        {
+            "name": "gamblingtec/certified-rng",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sunsevennv/certified-rng.git",
+                "reference": "1fbdb1593620e0e7978ebf368a021ebb13600a60"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sunsevennv/certified-rng/zipball/1fbdb1593620e0e7978ebf368a021ebb13600a60",
+                "reference": "1fbdb1593620e0e7978ebf368a021ebb13600a60",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "zendframework/zend-math": "^3.2"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^1.11.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev",
+                    "dev-develop": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Gamblingtec\\RNG\\Utility\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Brendan Nash",
+                    "email": "brendan@gamblingtec.com"
+                }
+            ],
+            "description": "Certified random number generator (RNG) by GamblingTec using Zend Math Rand",
+            "homepage": "https://www.gamblingtec.com",
+            "keywords": [
+                "RNG",
+                "gambling rng",
+                "gamblingtec",
+                "random number generator"
+            ],
+            "time": "2019-04-02T14:52:57+00:00"
         },
         {
             "name": "paragonie/random_compat",
