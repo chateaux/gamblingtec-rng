@@ -83,14 +83,24 @@ Once the dependencies are installed, cd to the bin folder and type:
 
 You will be given the following options:
 
-  * 1 Heads or tails example
-  * q Quit...
+  * 1) Heads or tails example
+  * 2) Fisher/Yates card shuffle
+  * q) Quit...
 
 Press "q" to exit or "1" to play the heads or tails game.
 
 ## Heads or tails example
 
 The game uses the getBool() method to select heads or tails. 
+
+## Fisher/Yates card shuffle example
+
+The Fisher-Yates shuffle is an algorithm for generating a random permutation of a finite sequence. In this example we use
+it to shuffle a deck of cards!
+
+## Need to certify your games for a gambling license?
+If you use this library it can be certified for remote gambling purposes, please make sure you do not modify the GamblingTecRNG.php file which uses
+static methods to call the Zend/Math/Rand.php static methods.
 
 # Using the code in your own game
 
