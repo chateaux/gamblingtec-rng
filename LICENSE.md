@@ -1,4 +1,4 @@
-Copyright (c) 2014-2019, SunSeven NV
+Copyright (c) 2006-2019, SunSeven NV
 
 All rights reserved.
 
