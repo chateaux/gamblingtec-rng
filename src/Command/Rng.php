@@ -195,4 +195,122 @@ class Rng
         return;
     }
 
+    /**
+     * A simple game where you guess the outcome of the card suit
+     * @param AdapterInterface $console
+     */
+    private function suitsYouSir(AdapterInterface $console)
+    {
+        $loop = true;
+
+        while ($loop == true) {
+            $figlet = new \Zend\Text\Figlet\Figlet();
+            echo $figlet->render('Suits you?');
+
+            $selectedSuit = '';
+            while (!in_array($selectedSuit, ['c', 'd', 'h', 's'])) {
+                $selectedSuit = Line::prompt('Select a suit c [Clubs], d [Diamonds], h [Hearts], s [Spades]: ');
+            }
+            /**
+             * In this case we shuffle the deck then get a random card from the deck. We could simplify this by
+             * simply taking the first cards suit in the shuffled deck.
+             */
+            $shuffledDeck = FisherYatesShuffle::shuffle($this->getCardPack());
+            $randomCard = GamblingTecRNG::getInteger(0, 51);
+            $card = $shuffledDeck[$randomCard];
+            $randomSuit = (strlen($card) == 2) ? $card[1] : $card[2];
+            $cardName = ['c' => 'Clubs', 'd' => 'Diamonds', 'h' => 'Hearts', 's' => 'Spades'];
+
+            $console->writeLine('Shuffling in progress: ');
+            for ($i = 0; $i < 14; $i++) {
+                $console->write('#');
+                usleep(200000);
+            }
+
+            $selectedSuit = strtolower($selectedSuit);
+            $randomSuit = strtolower($randomSuit);
+
+            $console->writeLine('');
+            $console->writeLine('Selected: '.$card);
+            $console->write('You selected '.$cardName[$selectedSuit].', '.$cardName[$randomSuit].' was randomly selected, ');
+
+            if (strtoupper($randomSuit) == strtoupper($selectedSuit)) {
+                $console->writeLine('so you won!');
+            } else {
+                $console->writeLine('so you lost');
+            }
+
+            $console->writeLine('');
+
+            $loop = Prompt\Confirm::prompt('Play again [y/n]');
+
+            $console->clearScreen();
+        }
+
+        return;
+    }
+
+    /**
+     * Scaled min/max data
+     * @param AdapterInterface $console
+     */
+    private function scaleMinMax(AdapterInterface $console)
+    {
+        $loop = true;
+        while ($loop == true) {
+            $figlet = new \Zend\Text\Figlet\Figlet();
+            echo $figlet->render('Scaled data!');
+            $min = Line::prompt(
+                'Select a min value: (eg 1 - 9): ',
+                false,
+                6
+            );
+            $max = Line::prompt(
+                'Select a max value: (eg 10 - 100): ',
+                false,
+                6
+            );
+            if ($min > $max) {
+                $console->writeLine("Sorry, min can not be greater than max", \Zend\Console\ColorInterface::RED);
+                return;
+            }
+            $generateNumbers = Line::prompt(
+                'How many random numbers would you like to generate? (eg 1 - 10,000,000): ',
+                false,
+                8
+            );
+            if ($generateNumbers < 1) {
+                $generateNumbers = 1;
+            }
+            $iterations = Line::prompt(
+                'How many times would you like to run this test? (1 - 4): ',
+                false,
+                8
+            );
+            if ($iterations > 4) {
+                $console->writeLine("We only allow up to 4 iterations.", \Zend\Console\ColorInterface::RED);
+                return;
+            }
+            /**
+             * NB The MiB values are just estimates for reference purposes only.
+             */
+            $fileSize = ($generateNumbers < 347000) ? "< 1MiB" : "~".number_format((float)$generateNumbers/347000, 2, '.', '')."MiB";
+            $filename = $this->config['fileLocation'].$this->config['filenameScale'].\Date('y-m-d-h-i-s') . '-' . $iterations;
+            for($n=1;$n<=$iterations;$n++) {
+                $console->writeLine($n." Selecting $generateNumbers iterations from the pool ($min / $max)");
+                $console->writeLine($n." Writing integers to file ($fileSize)",\Zend\Console\ColorInterface::RED);
+                for($i=0;$i<$generateNumbers;$i++) {
+                    $result = GamblingTecRNG::getInteger($min, $max);
+                    file_put_contents($filename.$n.'.txt', $result.PHP_EOL, FILE_APPEND);
+                }
+                $console->writeLine("Integers written and stored in file: $filename$n.txt", \Zend\Console\ColorInterface::BLUE);
+            }
+            $console->writeLine('Ok we are done!',\Zend\Console\ColorInterface::BLUE);
+
+            $loop = Prompt\Confirm::prompt('Run again? [y/n]');
+            $console->clearScreen();
+        }
+
+        return;
+    }
 }
