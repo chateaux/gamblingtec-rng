@@ -4,6 +4,7 @@ namespace Application\Command;
 use Application\Service\FisherYatesShuffle;
 use Application\Service\GamblingTecRNG;
 use Zend\Console\Adapter\AdapterInterface;
+use Zend\Console\Prompt\Line;
 use Zend\Console\Prompt;
 use ZF\Console\Route;
 
