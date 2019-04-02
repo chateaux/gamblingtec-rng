@@ -85,6 +85,8 @@ You will be given the following options:
 
   * 1) Heads or tails example
   * 2) Fisher/Yates card shuffle
+  * 3) Clubs, Diamonds, Hearts, Spades game
+  * 4) Test scaled data for min, max values, and save to the data folder (ideal to test lottery type numbers)
   * q) Quit...
 
 Press "q" to exit or "1" to play the heads or tails game.
@@ -97,6 +99,13 @@ The game uses the getBool() method to select heads or tails.
 
 The Fisher-Yates shuffle is an algorithm for generating a random permutation of a finite sequence. In this example we use
 it to shuffle a deck of cards!
+
+## Clubs, Diamonds, Hearts, Spades game
+Player slects a suit, we then shuffle the cards, pick a random card and if the suit matches, the player wins.
+
+## Test scaled data
+A utility to test lottery related scaled data. Select the pools min and max values, how many numbers should be selected, and how many times.
+The method will run this test and store the result in a file which can be used for testing purposes.
 
 ## Need to certify your games for a gambling license?
 If you use this library it can be certified for remote gambling purposes, in order to do so, please make sure you do not modify the GamblingTecRNG.php file.
