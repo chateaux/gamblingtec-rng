@@ -112,10 +112,14 @@ class Rng
     {
         $loop = true;
 
-        //Clubs, Diamonds, Hearts, Spades
+        /**
+         * Some trivia, cards are valued in the following order:
+         * Clubs, Diamonds, Hearts, Spades, with the two of Clubs being the weakest card and the Ace of Spades being the strongest.
+         * Why? Because it is alphabetic!
+         */
         $cardPack = [
-            0 => '2D', 1 => '3D', 2 => '4D', 3 => '5D', 4 => '6D', 5 => '7D', 6 => '8D', 7 => '9D', 8 => '10D', 9 => 'JD', 10 => 'QD', 11 => 'KD', 12 => 'AD',
-            13 => '2C', 14 => '3C', 15 => '4C', 16 => '5C', 17 => '6C', 18 => '7C', 19 => '8C', 20 => '9C', 21 => '10C', 22 => 'JC', 23 => 'QC', 24 => 'KC', 25 => 'AC',
+            0 => '2C', 1 => '3C', 2 => '4C', 3 => '5C', 4 => '6C', 5 => '7C', 6 => '8C', 7 => '9C', 8 => '10C', 9 => 'JC', 10 => 'QC', 11 => 'KC', 12 => 'AC',
+            13 => '2D', 14 => '3D', 15 => '4D', 16 => '5D', 17 => '6D', 18 => '7D', 19 => '8D', 20 => '9D', 21 => '10D', 22 => 'JD', 23 => 'QD', 24 => 'KD', 25 => 'AD',
             26 => '2H', 27 => '3H', 28 => '4H', 29 => '5H', 30 => '6H', 31 => '7H', 32 => '8H', 33 => '9H', 34 => '10H', 35 => 'JH', 36 => 'QH', 37 => 'KH', 38 => 'AH',
             39 => '2S', 40 => '3S', 41 => '4S', 42 => '5S', 43 => '6S', 44 => '7S', 45 => '8S', 46 => '9S', 47 => '10S', 48 => 'JS', 49 => 'QS', 50 => 'KS', 51 => 'AS',
 
