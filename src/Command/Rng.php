@@ -2,7 +2,7 @@
 namespace Application\Command;
 
 use Application\Service\FisherYatesShuffle;
-use Application\Service\GamblingTecRNG;
+use Gamblingtec\RNG\Utility\GamblingTecRNG;
 use Zend\Console\Adapter\AdapterInterface;
 use Zend\Console\Prompt\Line;
 use Zend\Console\Prompt;
@@ -101,7 +101,7 @@ class Rng
             echo $figlet->render('Heads or Tails');
 
             $heads = Prompt\Confirm::prompt('Select heads? [y/n]');
-            $headsOrTails = gamblingTecRNG::getBoolean();
+            $headsOrTails = GamblingTecRNG::getBoolean();
 
             if ($heads) {
                 $console->writeLine('You have selected heads.');
