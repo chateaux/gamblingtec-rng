@@ -1,6 +1,11 @@
-# Certified RNG class
+# Certified RNG utility
+This utility uses GamblingTec's certified RNG wrapper to run some test command line games. Its purpose
+is to assist developers in using the class as well as to provide them with some tools to test the output
+from the random number generator.
 
-## About us
+Feel free to modify and update this utility to assist in making it a useful tool to the community.
+
+## About us (Unashamed plug about our business)
 
 GamblingTec.com offers a wide variety of gambling licensing services from incorporation's and license 
 applications to managed licensing services. Additionally, the company offers a simple way for game 
@@ -65,7 +70,12 @@ to read about the class here: https://docs.zendframework.com/zend-math/rand/
 We posted a link about the certification process here: 
 https://discourse.zendframework.com/t/i-had-zendmathrand-certified-and-it-passed-rng-testing/951
 
-## Installing the utility
+### You can find the class:
+Packagist: https://packagist.org/packages/gamblingtec/certified-rng
+Github: https://github.com/sunsevennv/certified-rng
+
+
+## Installing this utility
 
 Download the zip to your computer or use git:
 
