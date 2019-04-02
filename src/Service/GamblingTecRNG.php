@@ -1,4 +1,10 @@
 <?php
+/**
+ * Copyright Sunseven NN,
+ * E-Commerce Park, Willemstad, Curacao
+ * To be used according to the prevailing terms and conditions
+ * as set out in the discourse with Sunseven NV.
+ */
 namespace Application\Service;
 
 use Zend\Math\Rand;
