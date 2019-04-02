@@ -34,6 +34,8 @@ class Rng
             $options = array(
                 '1' => 'Heads or tails example',
                 '2' => 'Fisher/Yates card shuffle',
+                '3' => 'Clubs, Diamonds, Hearts, Spades game',
+                '4' => 'Test scaled data for min, max values, and save to the data folder (ideal to test lottery type numbers)',
                 'q' => 'Quit...'
             );
 
