@@ -14,67 +14,22 @@ to casino operators.
 
 visit: [https://www.curacaowebhosting.com](https://www.curacaowebhosting.com/2019/04/16/curacao-rng-certification/) for more information.
 
- ### Incorporation's + License applications
- 
- We work in Curacao and Malta and will manage the process of applying for a license under you
- company. We assist our clients with bank accounts, credit card processing, e-wallet and
- crypto currency solutions.
- 
- * Bank accounts
- * Processing
-    * Credit card
-    * Skrill
-    * NETeller
-    * Jeton wallet
-    * PaySafe Card
-    * Crypto
-        * Bitcoin
-        * DASH
-        * NEM
-
-From first application to your first sale: ~ 12 months.
-
-### Managed casino services
-
-Our managed casino service is where our clients setup their casinos under our existing license. We
-act as the operator and the client acts as the software provider and marketer.
-
-This is a quick way to setup a stand alone brand and piggy backing off our existing payment and banking
-relationships.
-
-
-From first application to first sale: ~ 3 months
-
-### Platform license
-
-The GamblingTec.com platform is an API driven bet/collect system that you can integrate your game into 
-or your casino brand under. It has existing payment solutions (as per above) and is a rapid way to 
-setup your casino or white labeling business.
-
-From first application to first sale: ~ 2 months
-
-
 ## The RNG Class
 
-We use Zend\Math\Rand in order to generate our random numbers. The class has passed die hard RNG
-testing and is certified to be used under **our Curacao license**.
+We use Laminas\Math\Rand in order to generate our random numbers. The class has passed die hard RNG
+testing and is certified to be used under **nearly all casino licenses**.
 
 Installing and using the class does not automatically give you certification under license. We still need
 to have the class certified for your game and you will then need to apply to the Master License
 holder with the certificate we issue.
  
-Zend\Math\Rand uses a cryptographically secure random number generator and we would encourage you
+Laminas\Math\Rand uses a cryptographically secure random number generator and we would encourage you
 to read about the class here: https://docs.zendframework.com/zend-math/rand/
-
-
-We posted a link about the certification process here: 
-https://discourse.zendframework.com/t/i-had-zendmathrand-certified-and-it-passed-rng-testing/951
 
 ### You can find the class:
 
 * Packagist: https://packagist.org/packages/gamblingtec/certified-rng
 * Github: https://github.com/sunsevennv/certified-rng
-
 
 ## Installing this utility
 
